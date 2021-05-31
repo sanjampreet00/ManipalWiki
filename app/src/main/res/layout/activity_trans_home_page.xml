@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    tools:context=".transHomePage">
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="417dp"
+        android:layout_height="75dp"
+        android:background="#DC143C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Fast Food"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="652dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/vikramb" />
+
+                    <ImageView
+                        android:id="@+id/p1b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/vikram" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p2b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/mannab" />
+
+                    <ImageView
+                        android:id="@+id/p2f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/manna" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="@color/white"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p3f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/momob" />
+
+                    <ImageView
+                        android:id="@+id/p3b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/momo" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p4f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/cravesb" />
+
+                    <ImageView
+                        android:id="@+id/p4b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/craves" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p5f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pfive" />
+
+                    <ImageView
+                        android:id="@+id/p5b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/planet" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p6f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/psix" />
+
+                    <ImageView
+                        android:id="@+id/p6b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/mfc" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p7f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pseven" />
+
+                    <ImageView
+                        android:id="@+id/p7b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/kamath" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p8f"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/peight" />
+
+                    <ImageView
+                        android:id="@+id/p8b"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/shubham" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f9"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pone" />
+
+                    <ImageView
+                        android:id="@+id/p1b9"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/waffee" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f10"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/ptwo" />
+
+                    <ImageView
+                        android:id="@+id/p1b10"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/natural" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="@color/white"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f2"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pthree" />
+
+                    <ImageView
+                        android:id="@+id/p1b2"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/tiwari" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f3"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pfour" />
+
+                    <ImageView
+                        android:id="@+id/p1b3"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/samosachat" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="@color/white"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button15"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f4"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pfive" />
+
+                    <ImageView
+                        android:id="@+id/p1b4"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/milk" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f5"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/psix" />
+
+                    <ImageView
+                        android:id="@+id/p1b5"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/mcd" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button16"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="@color/white"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button17"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f6"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/pseven" />
+
+                    <ImageView
+                        android:id="@+id/p1b6"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/chat" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+                <com.wajahatkarim3.easyflipview.EasyFlipView
+                    android:id="@id/easyFlipView"
+                    android:layout_width="205dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/p1f8"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/peight" />
+
+                    <ImageView
+                        android:id="@+id/p1b8"
+                        android:layout_width="200dp"
+                        android:layout_height="235dp"
+                        android:background="#00FFFFFF"
+                        app:srcCompat="@drawable/chaicafe" />
+                </com.wajahatkarim3.easyflipview.EasyFlipView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button18"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="@color/white"
+                    app:backgroundTint="#00FFFFFF" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="directPage"
+                    android:text="Directions"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    app:backgroundTint="#00FFFFFF" />
+            </TableRow>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="417dp"
+        android:layout_height="75dp"
+        android:background="#DC143C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="655dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/p2"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/beach" />
+
+                <ImageButton
+                    android:id="@+id/p3"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/res" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/p4"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/rentals" />
+
+                <ImageButton
+                    android:id="@+id/b4"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/sigh" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/p5"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/rest" />
+
+                <ImageButton
+                    android:id="@+id/b6"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/clubbing" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/b7"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/pt" />
+
+                <ImageButton
+                    android:id="@+id/b8"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/locate" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Manipal"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alegreya_sc"
+        android:text="Wiki"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
